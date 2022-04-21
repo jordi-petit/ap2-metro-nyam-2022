@@ -188,17 +188,19 @@ Coord = (float, float)   # (latitude, longitude)
 i la funció que ens donarà el camí més curt en temps és:
 
 ```python3
-def find_path(g: CityGraph, src: Coord, dst: Coord) -> Path: ... 
-    # retorna un camí que va del node més proper de src fins al node més proper a dst en g
+def find_path(ox_g: OsmnxGraph, g: CityGraph, src: Coord, dst: Coord) -> 
+Path: ...
 ```
 
 a on `Path` és:
 
 ```python3
-Path = List[Node] 
+NodeID = Union[int, str]
+Path = List[NodeID]
 ```
 
-on `Node` és el tipus dels nodes del graf de ciutat.
+i s'utilitza `ox_g` per trobar els nodes més propers a les coordenades.
+
 
 El mòdul `city` també ha d'oferir les funcionalitats següents per mostrar mapes:
 
@@ -219,7 +221,12 @@ mentre que `plot` hauria de dibuixar quelcom semblant a:
 
 ![images/citygraph.png](images/citygraph.png)
 
-En el cas de `plot_path`, cal dibuixar el camí utilitzant els colors de les línies de metro pels segments en trams de vies i en negre pels segments a peu.
+En el cas de `plot_path`, cal dibuixar el camí utilitzant els colors de les línies de metro pels segments en trams de vies i en negre pels segments a peu. Per exemple,
+
+![images/path.png](images/path.png)
+
+o més maco 🤣.
+
 
 
 ## Funcionalitat del mòdul `bot`
