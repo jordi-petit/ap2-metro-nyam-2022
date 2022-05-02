@@ -254,13 +254,11 @@ Opcionalment, el bot també pot incloure alguna comanda per definir (i tenir en 
 
 ## Fitxers de dades
 
-Com que és laboriós descarregar-se les dades de les fonts oficials (demanen autentificació), utilitzeu aquests altres enllaços alternatius que en contenen una còpia fàcilment accessible en format CSV:
+Com que és laboriós descarregar-se les dades de les fonts oficials (demanen autentificació), baixeu-vos-els d'aquí en format CSV:
 
 - [https://raw.githubusercontent.com/jordi-petit/ap2-metro-nyam-2022/main/data/restaurants.csv](https://raw.githubusercontent.com/jordi-petit/ap2-metro-nyam-2022/main/data/restaurants.csv)
 - [https://raw.githubusercontent.com/jordi-petit/ap2-metro-nyam-2022/main/data/blob/main/estacions.csv](https://raw.githubusercontent.com/jordi-petit/ap2-metro-nyam-2022/main/data/blob/main/estacions.csv)
 - [https://raw.githubusercontent.com/jordi-petit/ap2-metro-nyam-2022/main/data/blob/main/accessos.csv](https://raw.githubusercontent.com/jordi-petit/ap2-metro-nyam-2022/main/data/blob/main/accessos.csv)
-
-Heu de descarregar aquests fitxers a través de la xarxa (amb `pandas.read_csv()` per exemple).
 
 ## Llibreries
 
@@ -271,7 +269,7 @@ Utilitzeu les llibreries de Python següents:
 - `haversine` per a calcular distàncies entre coordenades.
 - `staticmap` per pintar mapes.
 - `python-telegram-bot` per interactuar amb Telegram.
-- `pandas` per llegir fitxers CSV a la xarxa.
+- `pandas` per llegir fitxers CSV.
 - `fuzzysearch` si voleu fer cerques difuses.
 
 Totes es poden instal·lar amb `pip3 install`.
@@ -358,6 +356,7 @@ El termini de lliurament és el **diumenge 5 de juny a les 23:59 CEST**.
 Només heu de lliurar un fitxer ZIP que, al descomprimir-se, generi els fitxers següents:
 
 - `barcelona.grf` (el graf de carrers de Barcelona), 
+- `restaurants.csv`, `restaestacions.csv`, `accessos.csv` (fitxers de dades),
 - `city.py`,
 - `metro.py`,
 - `restaurants.py`,
