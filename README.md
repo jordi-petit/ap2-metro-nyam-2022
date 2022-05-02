@@ -182,7 +182,7 @@ Gràcies al `CityGraph` sabrem com anar el més ràpid possible des d'un punt de
 Els punts s'indicaran amb coordenades:
 
 ```python3
-Coord = (float, float)   # (latitude, longitude)
+Coord = Tuple[float, float]   # (latitude, longitude)
 ```
 
 i la funció que ens donarà el camí més curt en temps és:
