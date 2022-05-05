@@ -3,6 +3,12 @@
 *Tria restaurant i vés-hi en metro!* 🍕 🚇
 
 
+## Dubtes freqüents i comentaris
+
+- Hem canviat al'enunciat que els fitxers CSV s'han de tenir a l'ordinador enlloc de la xarxa.
+- Per llegir els CSV amb `pandas`, segurament us cal la opció `encoding='latin1'` perquè la codificació dels accents és "vella".
+
+
 ## Introducció
 
 Aquesta pàgina descriu el projecte MetroNyan, que correspon a la segona pràctica del curs 2022 d'AP2 al GCED. La vostra tasca consisteix en implementar un Bot de Telegram que permeti als barcelonins trobar restaurants d'acord a les seves preferències i ensenyar-los com arribar-hi el més ràpid possible en desplaçaments en metro i a peu.
