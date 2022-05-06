@@ -5,9 +5,9 @@
 
 ## Dubtes freqüents i comentaris
 
-- Hem canviat al'enunciat que els fitxers CSV s'han de tenir a l'ordinador enlloc de la xarxa.
-- Per llegir els CSV amb `pandas`, segurament us cal la opció `encoding='latin1'` perquè la codificació dels accents és "vella".
-
+- [05/05/2022]: Hem canviat a l'enunciat que els fitxers CSV s'han de tenir a l'ordinador enlloc de la xarxa.
+- [05/05/2022]: Per llegir els CSV amb `pandas`, segurament us cal la opció `encoding='latin1'` perquè la codificació dels accents és "vella".
+- [06/05/2022]: Hem actualitzat a l'enunciat la definició dels àlies de tipus perquè el mypy no doni errors. Haureu d'importar TypeAlias del mòdul typing_extensions (amb versions 3.9 i anteriors de python) i del mòdul typing (amb versions posteriors de python).
 
 ## Introducció
 
@@ -52,7 +52,7 @@ La informació de cada restaurant s'ha de desar en una dada de tipus `Restaurant
 @dataclass 
 class Restaurant: ...
 
-Restaurants = List[Restaurant]
+Restaurants : TypeAlias = List[Restaurant]
 ```
 
 La funció `read` ha de descarregar i llegir el fitxers de restaurants i retornar-ne la seva llista:
@@ -95,7 +95,7 @@ def get_metro_graph() -> MetroGraph: ...
 que retorna un graf no dirigit a partir del contingut de les dades d'estacions i d'accessos proporcionats.  El tipus `MetroGraph` no és altra cosa que un graf no dirigit de networkx:
 
 ```python3
-MetroGraph = networkx.Graph
+MetroGraph : TypeAlias = networkx.Graph
 ```
 
 Per implementar la funció anterior, aquest mòdul defineix els tipus `Station` i `Access` que contenen les informacions rellevants dels fitxers de dades.
@@ -107,9 +107,9 @@ class Station: ...
 @dataclass 
 class Access: ...
 
-Stations = List[Station]
+Stations : TypeAlias = List[Station]
 
-Accesses = List[Access]
+Accesses : TypeAlias = List[Access]
 ```
 
 Les funcions següents han de descarregar els fitxers corresponents i retornar-ne el seu contingut:
@@ -145,7 +145,7 @@ Useu `staticmaps`.
 El mòdul `city` és el responsable de crear i consultar el **graf de ciutat** que representarà tota la informació necessària per saber anar d'una cruïlla de la ciutat de Barcelona a una altre de la forma més ràpida possible a peu o en metro. El graf de ciutat serà un graf no dirigit resultat de la fusió de dos altres grafs: el graf dels carrers de Barcelona (que ens proporcionarà el mòdul `osmnx`) i el graf de metro (que ens el proporcionarà el mòdul `metro`). El graf de ciutat serà del tipus
 
 ```python3
-CityGraph = networkx.Graph
+CityGraph : TypeAlias = networkx.Graph
 ```
 
 i cada aresta tindrà un atribut `info` de tipus `Edge` que heu de definir vosaltres (que segurament inclourà camps com `tipus`, `color`, ...).
@@ -158,7 +158,7 @@ def get_osmnx_graph() -> OsmnxGraph: ...
 a on un `OsmnGraph` no és més que:
 
 ```python3
-OsmnxGraph = networkx.MultiDiGraph
+OsmnxGraph : TypeAlias = networkx.MultiDiGraph
 ```
 
 és a dir, un graf dirigit multi-arc. Això vol dir que dos nodes *u*, *v* poden estar connectats per diversos arcs *(u, v)*.  
@@ -188,7 +188,7 @@ Gràcies al `CityGraph` sabrem com anar el més ràpid possible des d'un punt de
 Els punts s'indicaran amb coordenades:
 
 ```python3
-Coord = Tuple[float, float]   # (latitude, longitude)
+Coord : TypeAlias = Tuple[float, float]   # (latitude, longitude)
 ```
 
 i la funció que ens donarà el camí més curt en temps és:
@@ -201,8 +201,8 @@ Path: ...
 a on `Path` és:
 
 ```python3
-NodeID = Union[int, str]
-Path = List[NodeID]
+NodeID : TypeAlias = Union[int, str]
+Path : TypeAlias = List[NodeID]
 ```
 
 i s'utilitza `ox_g` per trobar els nodes més propers a les coordenades.
