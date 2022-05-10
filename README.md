@@ -9,6 +9,7 @@
 - [05/05/2022]: Per llegir els CSV amb `pandas`, segurament us cal la opció `encoding='latin1'` perquè la codificació dels accents és "vella".
 - [06/05/2022]: Hem actualitzat a l'enunciat la definició dels àlies de tipus perquè el mypy no doni errors. Haureu d'importar TypeAlias del mòdul typing_extensions (amb versions 3.9 i anteriors de python) i del mòdul typing (amb versions posteriors de python).
 - [06/05/2022]: No useu el mòdul `pep8` que es vell i no entén els tipus, useu  `pycodestyle` al seu lloc.
+- [10/05/2022]: Si a l'implementar el bot us dóna aquest error: "cannot schedule new futures after interpreter shutdown" heu d'afegir després de updater.start_polling() una crida a updater.idle(). Hem actualitzat les lliçons del jutge amb aquesta nova API.
 
 ## Introducció
 
