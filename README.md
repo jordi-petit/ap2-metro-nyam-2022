@@ -16,7 +16,9 @@
 
 Aquesta pàgina descriu el projecte MetroNyan, que correspon a la segona pràctica del curs 2022 d'AP2 al GCED. La vostra tasca consisteix en implementar un Bot de Telegram que permeti als barcelonins trobar restaurants d'acord a les seves preferències i ensenyar-los com arribar-hi el més ràpid possible en desplaçaments en metro i a peu.
 
-Aquí podeu veure un exemple d'ús de l'aplicació: [exemple.mp4](videos/exemple.mp4) (gentil·lesa de Benet Ramió i Carlos Arbonés).
+Aquí  podeu veure un exemple d'ús de l'aplicació (gentil·lesa de Benet Ramió i Carlos Arbonés):
+
+[![Vídeo](https://img.youtube.com/vi/MGvC0FB5nd8/0.jpg)](https://www.youtube.com/watch?v=MGvC0FB5nd8)
 
 Per realitzar aquesta pràctica haureu d'utilitzar aquestes dades:
 
