@@ -3,8 +3,9 @@
 *Tria restaurant i vés-hi en metro!* 🍕 🚇
 
 
-## Dubtes freqüents i comentaris
+## Dubtes freqüents, aclariments i comentaris
 
+- [13/05/2022]: Afegim un vídeo creat per en Benet Ramió i en Carlos Arbonés amb un exemple de sessió amb el seu Bot. El vídeo és perquè us feu una idea de com queda el producte al final, no cal que ho feu tot igual que en aquest exemple, hi ha moltes coses que es poden fer diferents.
 - [05/05/2022]: Hem canviat a l'enunciat que els fitxers CSV s'han de tenir a l'ordinador enlloc de la xarxa.
 - [05/05/2022]: Per llegir els CSV amb `pandas`, segurament us cal la opció `encoding='latin1'` perquè la codificació dels accents és "vella".
 - [06/05/2022]: Hem actualitzat a l'enunciat la definició dels àlies de tipus perquè el `mypy` no doni errors. Haureu d'importar `TypeAlias` del mòdul `typing_extensions` (amb versions 3.9 i anteriors de python) i del mòdul `typing` (amb versions posteriors de python).
@@ -14,6 +15,8 @@
 ## Introducció
 
 Aquesta pàgina descriu el projecte MetroNyan, que correspon a la segona pràctica del curs 2022 d'AP2 al GCED. La vostra tasca consisteix en implementar un Bot de Telegram que permeti als barcelonins trobar restaurants d'acord a les seves preferències i ensenyar-los com arribar-hi el més ràpid possible en desplaçaments en metro i a peu.
+
+Aquí podeu veure un exemple d'ús de l'aplicació: [exemple.mp4](videos/exemple.mp4) (gentil·lesa de Benet Ramió i Carlos Arbonés).
 
 Per realitzar aquesta pràctica haureu d'utilitzar aquestes dades:
 
