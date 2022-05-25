@@ -366,6 +366,8 @@ Si no es reb cap missatge d'equip per aquesta data, es considerarà que feu la p
 Heu de lliurar la vostra pràctica al Racó.
 El termini de lliurament és el **diumenge 5 de juny a les 23:59 CEST**.
 
+Si feu la pràctica en equip, només l'estudiant més jove l'ha de lliurar.
+
 Només heu de lliurar un fitxer ZIP que, al descomprimir-se, generi els fitxers següents:
 
 - `barcelona.grf` (el graf de carrers de Barcelona), 
