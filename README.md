@@ -5,7 +5,7 @@
 
 ## Dubtes freqüents, aclariments i comentaris
 
-- [03/06/2022]: El fitxer *token.txt no l'heu d'afegir al zip* que entregueu. Aquesta és una informació personal amb la qual altres persones es podrien fer passar per vosaltres (almenys amb un bot a telegram). Mantingueu-la, per tant, de forma segura i no la distribuïu a tercers. Els professors farem servir el nostre propi token per fer les correccions.
+- **[03/06/2022]**: El fitxer **token.txt no l'heu d'afegir al zip** que entregueu. Aquesta és una informació personal amb la qual altres persones es podrien fer passar per vosaltres (almenys amb un bot a telegram). Mantingueu-la, per tant, de forma segura i no la distribuïu a tercers. Els professors farem servir el nostre propi token per fer les correccions.
 - [13/05/2022]: Afegim un vídeo creat per en Benet Ramió i en Carlos Arbonés amb un exemple de sessió amb el seu Bot. El vídeo és perquè us feu una idea de com queda el producte al final, no cal que ho feu tot igual que en aquest exemple, hi ha moltes coses que es poden fer diferents.
 - [10/05/2022]: Si a l'implementar el bot us dóna aquest error: "cannot schedule new futures after interpreter shutdown" heu d'afegir després de `updater.start_polling()` una crida a `updater.idle()`. Hem actualitzat les lliçons del jutge amb aquesta nova API.
 - [06/05/2022]: Hem actualitzat a l'enunciat la definició dels àlies de tipus perquè el `mypy` no doni errors. Haureu d'importar `TypeAlias` del mòdul `typing_extensions` (amb versions 3.9 i anteriors de python) i del mòdul `typing` (amb versions posteriors de python).
